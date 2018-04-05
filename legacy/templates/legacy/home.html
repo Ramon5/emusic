@@ -1,0 +1,81 @@
+{% extends "legacy/base.html" %}
+
+
+
+{% load staticfiles %}
+
+{% block content-header %}
+
+    Vendas<small>Gestão</small>
+    
+{% endblock content-header %}
+
+{% block content-main %}
+
+    <div class="col-lg-3 col-xs-6">
+    <!-- small box -->
+    <div class="small-box bg-aqua">
+        <div class="inner">
+        <h3>150</h3>
+
+        <p>Novas Vendas</p>
+        </div>
+        <div class="icon">
+        <i class="fa fa-shopping-cart"></i>
+        </div>
+        <a href="#" class="small-box-footer">Mais Informações <i class="fa fa-arrow-circle-right"></i></a>
+    </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-lg-3 col-xs-6">
+    <!-- small box -->
+    <div class="small-box bg-green">
+        <div class="inner">
+        <h3>53<sup style="font-size: 20px">%</sup></h3>
+
+        <p>Balanço Mensal</p>
+        </div>
+        <div class="icon">
+        <i class="fa fa-bar-chart-o"></i>
+        </div>
+        <a href="#" class="small-box-footer">Mais informações <i class="fa fa-arrow-circle-right"></i></a>
+    </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-lg-3 col-xs-6">
+    <!-- small box -->
+    <div class="small-box bg-yellow">
+        <div class="inner">
+        <h3>{{QtdUsu}}</h3>
+
+        <p>Vendedores Registrados</p>
+        </div>
+        <div class="icon">
+        <i class="fa fa-user"></i>
+        </div>
+        <a href="#" class="small-box-footer">Mais Informações <i class="fa fa-arrow-circle-right"></i></a>
+    </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-lg-3 col-xs-6">
+    <!-- small box -->
+    <div class="small-box bg-red">
+        <div class="inner">
+        <h3>
+          {{QtdCli}} 
+     </h3>
+
+        <p>Clientes Registrados</p>
+        </div>
+        <div class="icon">
+        <i class="fa fa-users"></i>
+        </div>
+        <a href="#" class="small-box-footer">Mais Informações<i class="fa fa-arrow-circle-right"></i></a>
+    </div>
+    </div>
+
+
+
+{% endblock content-main %}
+    
+    
